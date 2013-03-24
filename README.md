@@ -10,7 +10,7 @@ Plurk Theme with CSS by [kuniumi Yen](http://about.me/tzulum) | *Open source wit
 
 >建議解析度:750+X750+ *各種比例都完美支援(?，請放心使用*
 
->建議畫面背景:因為*畫面背景*預設採用Plurk原先的設定，基於設計建議選擇較深色的*畫面背景*
+>建議畫面背景:因為 *畫面背景* 預設採用Plurk原先的設定，基於設計建議選擇較深色的 *畫面背景*
 
 **如果有問題、建議、Bug，歡迎回報!**
 
@@ -29,13 +29,13 @@ Plurk Theme with CSS by [kuniumi Yen](http://about.me/tzulum) | *Open source wit
 
 作者:[キマシタワーPさんとこの | 春沢](http://www.pixiv.net/member_illust.php?mode=medium&illust_id=34141681)
 
->如果要換圖請自行修改CSS*頂置設定*的部分
+>如果要換圖請自行修改CSS *頂置設定* 的部分
 
 >因為原先的設計，建議使用去背後的圖片
 
->如果想讓圖片填滿或者調整位置，也請自行修改CSS*頂置設定*的部分
+>如果想讓圖片填滿或者調整位置，也請自行修改CSS *頂置設定* 的部分
 
-題外話**命名由來**
+題外話 **命名由來**
 
 >**kunigumi:**有沒有人想幫我新的Plurk佈景取名?
 
@@ -45,6 +45,6 @@ Plurk Theme with CSS by [kuniumi Yen](http://about.me/tzulum) | *Open source wit
 
 當然還要用一些理由來解釋
 
->維基百科表示:Presto條目有兩條，一條是我最喜歡的排版引擎、另一個是電影
+>維基百科表示:Presto條目有兩條，一條是我最喜歡的排版引擎、另一條是電影
 
 >所以我在3後面加上Presto的理由就成立了(啥
