@@ -1,10 +1,42 @@
-/*CSS for www.plurk.com*/
-/*3Presto by kuniumi yen*/
-/*background-image by 春沢 http://www.pixiv.net/member_illust.php?mode=medium&illust_id=34141681 */
+/*	CSS for www.plurk.com
+	3Presto by kuniumi yen
+		https://github.com/tzulum/3Presto
+		http://about.me/tzulum
+	License:GNU General Public License
+	Supported browsers:Opera,firefox,Chromium
+*/
+/*Version 0.1-Beta 2013/03/24*/
+
+/*-----頂置設定-----*/
+/*background-image(自訂背景)*/
+#timeline_bg,
+#timeline_fg {
+    background-image:  url("http://i.imgur.com/JHgl3TY.png"); /* 背景圖片 */
+    	/*Default background-image by 春沢 
+    	http://www.pixiv.net/member_illust.php?mode=medium&illust_id=34141681 */
+	background-repeat: no-repeat; /*重複背景*/
+	background-position: right bottom; /*背景位置*/
+}
+
+/*Plurk dynamic logo*/
+/*目前為噗浪預設，如需自訂請拿掉註解*/
+/*
+#dynamic_logo, #logo {
+	background: url("");
+	background-size: 0px 0px;
+	width: 0px !important;
+	height:	0px !important;
+	position: fixed !important;
+	overflow: visible;
+	top: 0px !important;
+	left: 0px !important;
+}*/
+
+/*-----頂置設定結束-----*/
 
 html {overflow-x: hidden;}
 html, body {
-  width: 100%;
+	width: 100%;
 	height: 99%;
 	min-width: 650px; 
 	min-height: 650px; 
@@ -18,16 +50,15 @@ html, body {
 	color: #666666 !important;
 	font-family: "LiHei Pro", "文泉驛微米黑", "微軟正黑體", Arial, Helvetica, sans-serif !important;
 	text-shadow: 1px 1px 1px black;
-	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
 	transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	-ms-transition: all 0.2s ease 0s;
 }
 #top_login a:hover,
-#top_bar a:hover {
-	color: white !important;
-}
+#top_bar a:hover {color: white !important;}
+
 /* 標題 */
 #page_title {
 	color: white !important;
@@ -37,17 +68,6 @@ html, body {
 	font-size: 1.6em !important;
 	padding-top: 25px !important;
 }
-/* Plurk dynamic logo 
-#dynamic_logo, #logo {
-	background: url("");
-	background-size: 0px 0px;
-	width: 0px !important;
-	height:	0px !important;
-	position: fixed !important;
-	overflow: visible;
-	top: 0px !important;
-	left: 0px !important;
-}*/
 
 /* 河道 */
 #timeline_holder {
@@ -55,7 +75,7 @@ html, body {
 	height: 80% !important;
 	min-height: 540px; 
 	background-image: none;
-	background: #EEEEEE; /* Old browsers */
+	background: #EEEEEE;
 	background: linear-gradient(to bottom, #EEEEEE 70%,#AAAAAA 100%);
 	background: -o-linear-gradient(top, #EEEEEE 70%,#AAAAAA 100%);
 	background: -moz-linear-gradient(top, #EEEEEE 70%, #AAAAAA 100%);
@@ -71,31 +91,24 @@ html, body {
 #timeline_fg {
 	height: 78% !important;
 	min-height: 540px; 
-    background-image:  url("http://i.imgur.com/JHgl3TY.png"); /* 河道背景放這 */
-	background-repeat: no-repeat;
-	background-position: right bottom;
 }
-/* 噗能出現的範圍 */
 #timeline_cnt {
 	top: 10% !important;
 	height: 70% !important;
 	padding-top: 2% !important;
 	z-index: 500 !important;
-
 }
 .block_bg,
 .block_cnt,
 .div_inner,
-.div_one_line {
-	height: 100% !important;
-}
-/* 小螢幕(<500) */
+.div_one_line {height: 100% !important;}
 .small_timeline,
 .small_timeline #timeline_holder {
 	height: 90% !important;
 	min-height: 600px; 
 }
-/* 底部時間條 */
+
+/*時間列*/
 #bottom_line {
 	top: 82px !important;
 	z-index: 100;
@@ -106,7 +119,12 @@ html, body {
 	color: black !important;
 	z-index: 800;
 }
-/* 浮動噗浪時間 */
+.day_start .bottom_start {
+	color: black !important;
+	text-shadow:0px 0px 5px #ffffff !important;
+}
+
+/* 浮動發噗時間 */
 .evening, .night, .day, .morning {
 	top: 80% !important;
 	width: 250px !important;
@@ -119,9 +137,9 @@ html, body {
 	background: none;
 	background-color: rgba(0,0,0,0.5) !important;
 	border: none !important;
+	border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
-	border-radius: 5px 5px 5px 5px;
 	color: white;
 	text-shadow: 1px 1px 1px black;
 	font-size: 2em !important;
@@ -130,15 +148,9 @@ html, body {
 #time_show span {
 	color: white !important;
 }
-/* 每日日期文字 */
-.day_start .bottom_start {
-	color: black !important;
-	text-shadow:0px 0px 5px #ffffff !important;
-}
-/* 每日分隔線 */
-.day_bg {
-	height: 97% !important;
-}
+
+/*換日線*/
+.day_bg {height: 97% !important;}
 .day_bg .div_inner {
 	background: none !important;
 	width: 0px !important;
@@ -146,7 +158,8 @@ html, body {
 	border-left: 1px solid rgba(255,255,255,0.2) !important;
 	border-right: 1px solid rgba(50,50,50,0.2) !important;
 }
-/* 通知 */
+
+/*新訊息更新&背景播放器*/
 #updater *,
 #music_player * {
 	color: white !important;
@@ -167,21 +180,15 @@ html, body {
 	border-radius: 5px 5px 5px 5px;
 	border: none !important;
 	font-size: 1.6em;
-	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
 	transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	-ms-transition: all 0.2s ease 0s;
 }
 #updater:hover,
-#music_player:hover {
-	background-color: rgba(0,0,0,0.9) !important;
-}
-#updater b { 
-	font-size: 1.6em;
-}
-
-/* 分隔線 */
+#music_player:hover {background-color: rgba(0,0,0,0.9) !important;}
+#updater b { font-size: 1.6em;}
 #update_sepa {
 	width: 0px !important;
 	padding: 0px;
@@ -190,7 +197,10 @@ html, body {
 	border-right: 1px solid rgba(200,200,200,0.5) !important;
 }
 
-/* 噗浪過濾按鈕 */
+/* 向左向右回到最前按鈕 */
+.browse_button {top: 70%;}
+
+/*分類按鈕*/
 #filter_tab {
 	position: absolute !important;
 	top: 60px !important;
@@ -208,81 +218,77 @@ html, body {
 	border: 1px solid black !important;
 	border-bottom: none !important;
 	background: #333333;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 	-moz-border-radius-topleft: 5px;
 	-moz-border-radius-topright: 5px;
 	-webkit-border-top-left-radius: 5px;
 	-webkit-border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	border-top-right-radius: 5px;
 	text-decoration: none;
 	font-weight: bold;
-	-webkit-transition: background-color 0.2s ease 0s;
-	-moz-transition: background-color 0.2s ease 0s;
-	-ms-transition: background-color 0.2s ease 0s;
-	-o-transition: background-color 0.2s ease 0s;
 	transition: background-color 0.2s ease 0s;
-	-webkit-transition: color 0.2s ease 0.2s;
-	-moz-transition: color 0.2s ease 0.2s;
-	-ms-transition: color 0.2s ease 0.2s;
-	-o-transition: color 0.2s ease 0.2s;
+	-o-transition: background-color 0.2s ease 0s;
+	-moz-transition: background-color 0.2s ease 0s;
+	-webkit-transition: background-color 0.2s ease 0s;
+	-ms-transition: background-color 0.2s ease 0s;
 	transition: color 0.2s ease 0.2s;
+	-o-transition: color 0.2s ease 0.2s;
+	-moz-transition: color 0.2s ease 0.2s;
+	-webkit-transition: color 0.2s ease 0.2s;
+	-ms-transition: color 0.2s ease 0.2s;
 }
 #filter_tab a.off_tab:hover,
 #filter_tab a.filter_selected {
-	background: #EEEEEE; /* Old browsers */
+	background: #EEEEEE;
 	color: black !important;
-	background: -moz-linear-gradient(top, #999999 0%, #EEEEEE 100%); /* FF3.6+ */
-	background: -webkit-linear-gradient(top, #999999 0%,#EEEEEE 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #999999 0%,#EEEEEE 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #999999 0%,#EEEEEE 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #999999 0%,#EEEEEE 100%); /* W3C */
+	background: linear-gradient(to bottom, #999999 0%,#EEEEEE 100%);
+	background: -o-linear-gradient(top, #999999 0%,#EEEEEE 100%);
+	background: -moz-linear-gradient(top, #999999 0%, #EEEEEE 100%);
+	background: -webkit-linear-gradient(top, #999999 0%,#EEEEEE 100%);
+	background: -ms-linear-gradient(top, #999999 0%,#EEEEEE 100%);
 }
 
+/*噗文*/
 .p_img {
 	position: relative !important;
 	left: 20px;
 	z-index: 850;
 	border: none !important;
+	box-shadow: 1px 1px 3px black;
 	-moz-box-shadow: 1px 1px 3px black;
 	-webkit-box-shadow: 1px 1px 3px black;
-	box-shadow: 1px 1px 3px black;
 }
-.block_cnt .plurk_cnt {padding-left: 20px !important;}
-/* 噗浪單體 */
-.plurk .plurk_cnt {
-	-moz-box-shadow: 0px 0px 3px black;
-	-webkit-box-shadow: 0px 0px 3px black;
-	box-shadow: 0px 0px 3px black;
-	opacity: 0.6;
-	z-index: 825;
-	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	transition: all 0.2s ease 0s;
-}
-.plurk_cnt:hover {
-	-moz-box-shadow: 0px 0px 5px black;
-	-webkit-box-shadow: 0px 0px 5px black;
-	box-shadow: 0px 0px 5px black;
-	opacity: 1;
-}
-/* 未讀噗浪 */
-.new .plurk_cnt {
-	-moz-box-shadow: 0px 0px 5px #FB0047;
-	-webkit-box-shadow: 0px 0px 5px #FB0047;
-	box-shadow: 0px 0px 5px #FB0047;
-	opacity: 1;
-}
-/* 噗浪者姓名 */
-.plurk_cnt .name {
+.plurk_cnt .name {/* 噗浪者姓名 */
 	font-size: 1.1em;
 	z-index: 855;
 	text-shadow: 0px 0px 1px rgba(0,0,0,0.5);
 }
-.list .plurk_cnt .name {
-	position: static !important;
+.block_cnt .plurk_cnt {padding-left: 20px !important;}
+.new .plurk_cnt {/* 未讀噗浪 */
+	box-shadow: 0px 0px 5px #FB0047 !important;
+	-moz-box-shadow: 0px 0px 5px #FB0047 !important;
+	-webkit-box-shadow: 0px 0px 5px #FB0047 !important;
+	opacity: 1 !important;
 }
+.plurk .plurk_cnt {/*未開啟的噗*/
+	box-shadow: 0px 0px 3px black;
+	-moz-box-shadow: 0px 0px 3px black;
+	-webkit-box-shadow: 0px 0px 3px black;
+	opacity: 0.6;
+	z-index: 825;
+	transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-ms-transition: all 0.2s ease 0s;
+}
+.plurk_cnt:hover {/*滑過的噗*/
+	box-shadow: 0px 0px 5px black;
+	-moz-box-shadow: 0px 0px 5px black;
+	-webkit-box-shadow: 0px 0px 5px black;
+	opacity: 1;
+}
+.list .plurk_cnt .name {position: static !important;}
 .list {
 	border-left:5px solid rgba(0, 0, 0, 0.7) !important;
 	border-right:5px solid rgba(0, 0, 0, 0.7) !important;
@@ -291,15 +297,12 @@ html, body {
 }
 .plurk_box .info_box,
 .plurk_box .caption {border: none !important;}
-
 .plurk_box .mini_form{
 	background:rgba(0, 0, 0, 0.7) !important;
 	color:white !important;
 	border: none !important;
 }
 .plurk_box .mini_form span{	color:white !important;}
-
-/* 噗浪回文 */
 .plurk_box .caption,
 .info_box {
 	color: #FFFFFF !important;
@@ -310,11 +313,10 @@ html, body {
 	color: #FFFFFF !important;
 	font-weight: bold;
 }
-/* 回文內容 */
 .plurk_box .plurk_cnt {
+	box-shadow: none;
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
-	box-shadow: none;
 	opacity: 1;
 	border:5px solid rgba(0, 0, 0, 0.7) !important;
 	border-bottom: none !important;
@@ -324,32 +326,27 @@ html, body {
 	padding: 0 !important;
 	border: none !important;
 }
-
 .plurk {
-	-moz-box-shadow:	none;
-	-webkit-box-shadow:	none;
-	box-shadow:			none;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
 }
-/* 回文右邊的選項 */
-.response_time.plurk_cnt{
+.response_time.plurk_cnt{/* 回文右邊的選項 */
 	background:rgba(0, 0, 0, 0.7) !important;
 	border: none !important;
+	transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
 	-webkit-transition: all 0.2s ease 0s;
 	-moz-transition: all 0.2s ease 0s;
 	-ms-transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	transition: all 0.2s ease 0s;
 }
-.response_time .holder{
-	background:none;
-}
+.response_time .holder{background:none;}
 .response_time .holder p,
 .response_time .holder a{
 	color:white !important;
 	text-shadow: 0px 0px 1px black;
 }
-/* 回應計數 */
-.response_count {
+.response_count {/* 回應數 */
 	border: none !important;
 	background: none !important;
 	color: #FFFFFF !important;
@@ -360,22 +357,14 @@ html, body {
 	font-size: 2em;
 }
 .new .response_count { text-shadow: 0px 0px 5px #FF0000 !important;}
-
 .plurk_icon {z-index: 860;}
-.bday {
+.bday {/*小蛋糕移位*/
 	top: -10px !important;
 	left: 10px !important;
 }
 
-/* 向左向右回到最前按鈕 */
-.browse_button {
-	top: 70%;
-}
-
 /* 發文訊息面板 */
-.plurkaction.pane textarea {
-	max-height: 380px !important;
-}
+.plurkaction.pane textarea {max-height: 380px !important;}
 .plurkaction.pane * {
 	color: white;
 	text-shadow: 1px 1px 1px black;
@@ -392,30 +381,30 @@ html, body {
 	min-width: 450px;
 	background: none;
 	color:black;
+	transition: all 0.5s ease-out 0s;
+	-o-transition: all 0.5s ease-out 0s;
 	-webkit-transition: all 0.5s ease-out 0s;
 	-moz-transition: all 0.5s ease-out 0s;
-	-o-transition: all 0.5s ease-out 0s;
+	-ms-transition: all 0.5s ease-out 0s;
 }
 .plurkaction.pane:hover {
 	max-height: 600px !important;
 	max-width: 725px;
-	-moz-border-radius: 0px 0px 5px 5px;
-	-webkit-border-radius: 0px 0px 5px 5px;
-	border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 0px;
+	-moz-border-radius: 0px 0px 5px 0px;
+	-webkit-border-radius: 0px 0px 5px 0px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 	-moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-	background: -moz-linear-gradient(top, rgba(50,50,50,0.2) 0%, rgba(100,100,100,0.9) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(50,50,50,0.2)), color-stop(100%,rgba(100,100,100,0.9))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%); /* IE10+ */
-	background: linear-gradient(to bottom, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%); /* W3C */
+	background: linear-gradient(to bottom, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%);
+	background: -o-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%);
+	background: -moz-linear-gradient(top, rgba(50,50,50,0.2) 0%, rgba(100,100,100,0.9) 100%);
+	background: -webkit-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%);
+	background: -ms-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%);
 }
-textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
-	border: 1px solid black;
-}
-/* 私噗設定面板 */
+textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {border: 1px solid black;}
+
+/* 傳送私噗 */
 #more_options_link {
 	background-image: none;
 	background-color: rgba(200,200,200,0);
@@ -432,9 +421,7 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	width: 0px !important;
 	overflow: hidden;
 }
-.qual_menu:not(.mini_menu) {
-	top: 20px !important;
-}
+.qual_menu:not(.mini_menu) {top: 20px !important;}
 .plurkaction.pane textarea,
 #auto_ta_holder *,
 #more_options select ,#more_options select * {
@@ -443,19 +430,17 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 }
 #plurk_form {padding: 0 !important;}
 
-/* 個人資訊面板 */
+/*個人資料*/
 .karma_tooltip {
 	position: fixed	!important;
 	top: 390px !important;
 	left: 215px !important;
 }
-#dashboard_holder
-{
+#dashboard_holder{
 	text-align:left !important;
 	width:100%;
 }
-div#plurk-dashboard
-{
+div#plurk-dashboard{
 	width:125px !important;
 	height:78.5% !important;
 	min-height: 541px; 
@@ -472,14 +457,13 @@ div#plurk-dashboard
 	-moz-box-shadow: 5px 0px 10px rgba(255,255,255,0.3);
 	-webkit-box-shadow: 5px 0px 10px rgba(255,255,255,0.3);
 	box-shadow: 5px 0px 10px rgba(255,255,255,0.3);
-	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
 	transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	-ms-transition: all 0.2s ease 0s;
 }
-div#plurk-dashboard:hover
-{
+div#plurk-dashboard:hover{
 	background:rgba(0,0,0,0.7) !important;
 	width:250px !important;
 	overflow:hidden !important;
@@ -489,15 +473,13 @@ div#plurk-dashboard:hover
 	-webkit-box-shadow: 5px 0px 5px rgba(0,0,0,0.7);
 	box-shadow: 5px 0px 5px rgba(0,0,0,0.7);
 }
-.dash-segment
-{
+.dash-segment{
 	width:250px;
 	min-height:10px !important;
 	height:auto !important;
 }
 .dash-segment h2,
-.dash-segment a
-{
+.dash-segment a{
 	color: #AAAAAA !important;
 	font-weight: bold !important;
 	-webkit-transition: all 0.2s ease 0s;
@@ -507,122 +489,95 @@ div#plurk-dashboard:hover
 	transition: all 0.2s ease 0s;
 }
 .dash-segment h2:hover,
-.dash-segment a:hover
-{
+.dash-segment a:hover{
 	color: #FFFFFF !important;
 	text-shadow: 0px 0px 1px #FFFFFF;
 }
-.dash-segment h2{
-	font-size: 1.4em !important;
-}
+.dash-segment h2{font-size: 1.4em !important;}
 #relationship_container{
 	margin-top: 10px !important;
 	margin-bottom: 10px !important;
 }
-p#about_me, #dash-stats, #dash-friends, #dash-fans
-{
+p#about_me, #dash-stats, #dash-friends, #dash-fans{
 	max-height:15px !important;
 	overflow:hidden !important;
 	padding: 5px;
+	border-radius:5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius:5px;
-	border-radius:5px;
-	-moz-transition:max-height 0.5s ease-in;  /*滑入效果*/
-	-webkit-transition:max-height 0.5s ease-in;
+	transition:max-height 0.5s ease-in;
 	-o-transition:max-height 0.5s ease-in;
+	-moz-transition:max-height 0.5s ease-in;
+	-webkit-transition:max-height 0.5s ease-in;
+	-ms-transition:max-height 0.5s ease-in;
 }
-p#about_me:hover, #dash-stats:hover, #dash-friends:hover, #dash-fans:hover
-{
+p#about_me:hover, #dash-stats:hover, #dash-friends:hover, #dash-fans:hover{
 	max-height:300px !important;
 	background:rgba(0,0,0,0.5) !important;
 }
-.segment-content
-{
+.segment-content{
 	padding-top:5px !important;
 	padding-bottom:5px !important;
 }
-#dash-profile
-{
-	margin-top:10px;
-}
+#dash-profile{margin-top:10px;}
 .profile-pic {
 	height: 100px;
 	width: 100px;
 }
-.show_all_friends
-{
+.show_all_friends{
 	text-align:center;
 	font-size:11px !important;
 }
-#dash-stats h3
-{
-	margin-top:0px !important; 
-}
-#karma
-{
+#dash-stats h3{margin-top:0px !important;}
+#karma{
 	font-size:30px !important;
 	color: #fff !important;
 	text-shadow: #ffde00 !important;
 }
-.award_bar  
-{
+.award_bar{
 	width:200px !important;
 	padding:0 !important;
 	margin-top:px !important;
 }
-.award_bar div
-{
+.award_bar div{
 	padding:0 !important;
 	margin:0 !important;
 }
-#dash-stats .award_bar img 
-{
-	-moz-transform: scale(0.5);
-	-khtml-transform: scale(0.5);
-	-webkit-transform: scale(0.5);
+#dash-stats .award_bar img {
+	transform: scale(0.5);
 	-o-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	-ms-transform: scale(0.5);
 }
-#dash-stats .award_bar div
-{
-	width:20px !important;
-}
+#dash-stats .award_bar div{width:20px !important;}
 .friend_holder {margin-top:0px;}
-.friend_holder table
-{
+.friend_holder table{
 	margin-top:0px;
 	margin-left:auto;
 	margin-right:auto;
 }
-.friend_holder td
-{
+.friend_holder td{
 	padding:0px 1px !important;
 	margin:0px !important;
 }
-.friend_holder .user_link
-.friend_holder .user_link:hover
-{
-	padding:0px !important;
-}
+.friend_holder .user_link,
+.friend_holder .user_link:hover{padding:0px !important;}
 #private_plurk, 
 #friend_managment,
-#fan_managment
-{
-	margin-top:12px !important;   /*各區塊上方間距*/
-	height:0px !important;   /*各區塊下方間距*/
+#fan_managment{
+	margin-top:12px !important;
+	height:0px !important;
 }
-a.friend_man
-{
+a.friend_man{
 	border:0 !important;
 	color:#fff !important;
 	font-size:11px !important;
 	background-color:black!important;
 }
-a.friend_man:hover
-{
-	color:#111 !important;
-}
+a.friend_man:hover{color:#111 !important;}
 
-/* 底部footer語言選擇版權宣告 */
+/*頁腳*/
 #footer{
 	margin-bottom: 0px !important;
 	margin-right: 50px !important;
@@ -632,21 +587,19 @@ a.friend_man:hover
 #footer a {
 	color: #666666 !important;
 	text-shadow: 1px 1px 1px black;
-	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-	-ms-transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
 	transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	-ms-transition: all 0.2s ease 0s;
 }
 #footer a:hover {color: #FFFFFF !important;}
 
-/* 噗浪內建視窗 */
-/* 視窗標題 */
+/*視窗(GB_Window)*/
 .GB_Window .header {
 	color: black !important;
 	border:	1px solid black	!important;
 }
-/* 視窗內容 */
 .GB_Window,
 .GB_Window .header,
 .GB_Window .content {
@@ -661,31 +614,28 @@ a.friend_man:hover
 	border: none;   
 	background: none;
 }
-
 .GB_Window {
 	background: rgba(0, 0, 0, .75);
-	-webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, .75);
-	-moz-box-shadow: 0px 0px 9px rgba(0, 0, 0, .75);
 	box-shadow: 0px 0px 9px rgba(0, 0, 0, .75);
-	-moz-border-radius: 4.5px;
-	-webkit-border-radius: 4.5px;
-	border-radius: 4.5px;
+	-moz-box-shadow: 0px 0px 9px rgba(0, 0, 0, .75);
+	-webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, .75);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	z-index:  2048;
 }
 .GB_Window .iframe_holder,
 .GB_Window iframe {
-	-moz-border-radius: 4.5px;
-	-webkit-border-radius: 4.5px;
-	border-radius: 4.5px;       
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;      
 	background: none;
 	border: none;
 }
-
 .GB_Window .header .caption {
 	background: none !important;
 	font-family: "LiHei Pro", "文泉驛微米黑", "微軟正黑體", Arial, Helvetica, sans-serif !important;
 }
-
 .GB_Window .header .close {
 	width: 0 !important;
 	max-width: 0 !important;
@@ -697,7 +647,7 @@ a.friend_man:hover
 	overflow: hidden;
 }
 
-/* 噗浪單頁 */
+/*噗浪單頁*/
 div.bigplurk h1.content {
 	-moz-border-radius-topleft: 5px;
 	-moz-border-radius-topright: 5px;
@@ -705,27 +655,25 @@ div.bigplurk h1.content {
 	-webkit-border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	-moz-box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.8);
-	box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0px -1px 3px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px -1px 3px rgba(0,0,0,0.7);
+	box-shadow: 0px -1px 3px rgba(0,0,0,0.7);
 }
 div.bigplurk div.time {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	-moz-border-radius-bottomleft: 5px;
 	-moz-border-radius-bottomright: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	-webkit-border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	-moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.8);
-	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 2px 3px rgba(0,0,0,0.7);
 }
-/* 噗浪單頁主題 */
 article.bigplurk.cboxAnchor {
 	position: relative !important;
 	top: -30px;
 }
-/* 噗浪單頁導航 */
 #plurk_nav {
 	position: absolute !important;
 	top: 20px;
@@ -734,21 +682,18 @@ article.bigplurk.cboxAnchor {
 #plurk_nav a {
 	color: black;
 	border: 1px solid #AAAAAA;
+	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
-	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
 }
 #plurk_nav a:hover {
-	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 }
-
-/* 分享按讚資訊 */
-/* 噗浪單頁回覆 */
 #plurker_info,
 #plurk_responses {
 	position: relative !important;
@@ -764,9 +709,9 @@ article.bigplurk.cboxAnchor {
 	border: none !important;
 	background: none !important;
 	padding: 0px !important;
-	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 }
 #plurk_responses,
 #plurk_responses .feed-link a {
@@ -775,8 +720,11 @@ article.bigplurk.cboxAnchor {
 /* 噗浪單頁回覆表單 */
 #reply #reply_box,
 #reply #reply_box_holder {
-	background: none !important;
-	border: none;
+	background:rgba(0,0,0,0.7) !important;
+	border: none !important;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
 }
 #reply #reply_box .qual_holder {
 	color: #EEEEEE !important;
@@ -784,8 +732,7 @@ article.bigplurk.cboxAnchor {
 	font-weight: bold;
 }
 
-
-/* 隱藏垃圾 */
+/*隱藏一些東西(ninja)*/
 #logo *,
 .permalink img#creature,
 #dash-stats .link_arrow,
