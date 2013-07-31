@@ -40,7 +40,7 @@ html, body {
 	height: 99%;
 	min-width: 650px; 
 	min-height: 650px; 
-	font-family: "LiHei Pro", "文泉驛微米黑", "微軟正黑體", Arial, sans-serif;
+	font-family: "文泉驛微米黑", "LiHei Pro", "微軟正黑體", Arial, sans-serif;
 }
 
 /* 導覽列*/
@@ -48,7 +48,7 @@ html, body {
 #top_login a,
 #top_bar a {
 	color: #666666 !important;
-	font-family: "LiHei Pro", "文泉驛微米黑", "微軟正黑體", Arial, sans-serif !important;
+	font-family: "文泉驛微米黑", "LiHei Pro", "微軟正黑體", Arial, sans-serif !important;
 	text-shadow: 1px 1px 1px black;
 	transition: all 0.2s ease 0s;
 	-o-transition: all 0.2s ease 0s;
@@ -634,7 +634,7 @@ a.friend_man:hover{color:#111 !important;}
 }
 .GB_Window .header .caption {
 	background: none !important;
-	font-family: "LiHei Pro", "文泉驛微米黑", "微軟正黑體", Arial, sans-serif !important;
+	font-family: "文泉驛微米黑", "LiHei Pro", "微軟正黑體", Arial, sans-serif !important;
 }
 .GB_Window .header .close {
 	width: 0 !important;
