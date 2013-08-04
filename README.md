@@ -2,8 +2,8 @@
 =======
 Plurk Theme with CSS by [kuniumi Yen](http://about.me/tzulum) | *Open source with GPL*
 
-[install 3Presto Plurk Theme](http://www.plurk.com/installDesign/4955640-2031fdc23f) *1.0*
-Change log:
+[install 3Presto Plurk Theme](http://www.plurk.com/installDesign/4955640-ac86c02ead) *1.0*</br>
+Change log:</br>
 1.0
 >移除字型設定、版面微調、適應噗浪官方調整、左側欄重新設計、分類按鈕加大、解決未讀按鈕衝突問題、解決時間無法顯示問題、移除有跟沒有一樣的IE支援、Opera R.I.P.
 
