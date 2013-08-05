@@ -401,6 +401,11 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {bo
 	color: #FFD700!important;
 	font-size: 28px!important;
 }
+.karma_tooltip {
+    position: fixed !important;
+    top: 300px !important;
+    left: 215px !important;
+}
 .profile-pic {
 	height: 100px;
 	width: 100px;
