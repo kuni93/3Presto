@@ -9,12 +9,12 @@
 
 /*-----頂置設定-----*/
 /*background-image(自訂河道背景)*/
-#timeline_bg,
-#timeline_fg {
-    background-image:  url("http://i.minus.com/iAqGAPEw3Mkfz.png"); /* 背景圖片 */
+/*如果你是整頁無去背的背景，那請將下一行的「#timeline_bg,#timeline_fg {」替換成「#timeline_holder{」*/
+#timeline_bg,#timeline_fg {
+    background-image:  url("http://i.minus.com/iAqGAPEw3Mkfz.png")!important; /* 背景圖片 */
     	/*Default background-image from http://www.pixiv.net/member_illust.php?mode=medium&illust_id=34141681 */
-	background-repeat: no-repeat; /*重複背景*/
-	background-position: right bottom; /*背景位置*/
+	background-repeat: no-repeat!important; /*重複背景*/
+	background-position: right bottom!important; /*背景對齊位置*/
 }
 /*-----頂置設定結束-----*/
 
@@ -47,7 +47,6 @@ html, body {
 	-webkit-box-shadow: 0px 0px 20px #333333;
 	border-top: 1px solid black !important;
 	border-bottom: 1px solid black !important;
-	background-image: none;
 	background-color: #EEEEEE;
 	background: linear-gradient(to bottom, #EEEEEE 60%,#AAAAAA 100%);
 	background: -o-linear-gradient(top, #EEEEEE 60%,#AAAAAA 100%);
