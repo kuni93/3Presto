@@ -2,12 +2,9 @@
 =======
 Plurk Theme with CSS by [kuniumi Yen](http://about.me/tzulum) | *Open source with GPL*
 
-[install 3Presto Plurk Theme](http://www.plurk.com/installDesign/4955640-ac86c02ead) *1.0*</br>
-
 Change log:
 
-1.0
->移除字型設定、版面微調、適應噗浪官方調整、左側欄重新設計、分類按鈕加大、解決未讀按鈕衝突問題、解決時間無法顯示問題、移除有跟沒有一樣的IE支援、Opera R.I.P.
+1.0 > 移除字型設定、版面微調、適應噗浪官方調整、左側欄重新設計、分類按鈕加大、解決未讀按鈕衝突問題、解決時間無法顯示問題、移除有跟沒有一樣的IE支援、Opera R.I.P.
 
 ![previewimg](http://i.minus.com/ibjxleKyJuz8ji.png "[1.0]自己登入狀態下的樣貌")
 ![previewimg](http://i.minus.com/ibxo5CsexVfXJH.png "[1.0]1.0新改版的左側欄位")
