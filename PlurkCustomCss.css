@@ -9,13 +9,51 @@
 
 /*-----Custom(自訂設定區)-----*/
 
-
+/*-----/Custom(自訂設定區結束)-----*/
 /*-----UI-----*/
+#filter_tab a{
+  padding: 0px 9px!important;
+  font-size: 14px;
+  line-height: 34px;
+  background-color: #DDD;
+  color: #333;
+  border: none!important;
+  text-decoration: none;
+  border-radius: 3px 3px;
+  transition: all .2s ease 0s;
+  -o-transition: all .2s ease 0s;
+  -moz-transition: all .2s ease 0s;
+  -webkit-transition: all .2s ease 0s;
+}
+#filter_tab a:hover{
+	background-color: #FFF;
+	color: #000;
+	text-decoration: none;
+	box-shadow: 0px 0px 3px #FFF;
+	-moz-box-shadow: 0px 0px 3px #FFF;
+	-webkit-box-shadow: 0px 0px 3px #FFF;
+}
+#filter_tab a.filter_selected {
+  color: #AAA;
+	background-color: #EEE;
+	box-shadow:inset 0px 0px 3px #000;
+	-moz-box-shadow:inset 0px 0px 3px #000;
+	-webkit-box-shadow:inset 0px 0px 3px #000;
+}
 
-
+/*-----/UI-----*/
 /*-----Layout-----*/
+#timeline_holder {
+  margin-top: 42px;
+}
 
-
+/*-----/Layout-----*/
 /*-----Position-----*/
+#filter_tab {
+	position: absolute;
+	top: 2px;
+	right: 0;
+	margin: 0;
+}
 
-
+/*-----/Position-----*/
