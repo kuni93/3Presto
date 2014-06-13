@@ -1,3 +1,9 @@
+3Presto 改(Kai)
+=======
+Plurk Theme with CSS by [kuniumi Yen](http://about.me/tzulum) | *Open source with GPL*
+
+因應 2014/06/11 下午，突如其來的改版以及對 [自訂佈景方式的改變](http://www.plurk.com/p/k4694u) ，想了一下之後決定砍掉重練，希望能再最短的時間內修復，且維持3Presto良好的噗浪使用體驗！
+
 3Presto
 =======
 Plurk Theme with CSS by [kuniumi Yen](http://about.me/tzulum) | *Open source with GPL*
@@ -39,8 +45,3 @@ Change log:
 
 >*既然你都說了，那我只好用了(?*
 
-當然還要用一些理由來解釋
-
->維基百科表示:Presto條目有兩條，一條是我最喜歡的排版引擎、另一條是電影
-
->所以我在3後面加上Presto的理由就成立了(啥
