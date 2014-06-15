@@ -42,6 +42,9 @@
 	font-weight: bold;
 	font-size: 14px;
 }
+.bottom_end {
+	opacity: 0;
+}
 #time_show {/*噗文時間*/
 	min-width: 200px;
 	padding: 10px;
@@ -97,7 +100,6 @@
 
 /*-----/UI-----*/
 /*-----Layout-----*/
-html { overflow-x: hidden; }
 html, body {
 	width: 100%;
 	height: 99%;
@@ -149,6 +151,16 @@ html, body {
 
 /*-----/Layout-----*/
 /*-----Position-----*/
+.day_bg {
+	height: 100% !important;
+	margin-top: -20px;
+}
+
+.div_bottom {
+	bottom: 0px;
+	position: absolute;
+}
+
 #bottom_line {
 	position: relative !important;
 	top: 100% !important;
