@@ -1,3 +1,50 @@
+.plurkaction {
+    padding: 0 25px;
+}
+.plurkaction table {
+    margin-top: 0;
+}
+
+/* 發文訊息面板 */
+#dashboard_holder {position: static!important;}
+.plurkaction.pane textarea {max-height: 380px !important;}
+.plurkaction.pane * {
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+.plurkaction.pane {
+	position: absolute;
+	top: 0 !important;
+	left: 0 !important;
+	z-index: 999 !important;
+	overflow: hidden !important;
+	border: none !important;
+	max-height: 40px;
+	max-width: 40%;
+	min-width: 450px;
+	background: none;
+	color:black;
+	transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+}
+.plurkaction.pane:hover {
+	max-height: 600px !important;
+	max-width: 99%;
+	border-radius: 0px 0px 5px 0px;
+	-moz-border-radius: 0px 0px 5px 0px;
+	-webkit-border-radius: 0px 0px 5px 0px;
+	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+	-moz-box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,.5);
+	background-color: rgba(50,50,50,.5);
+}
+textarea #input_big, #more_options .auto_ta, #more_options select, .clipboard {border: 1px solid black;}
+#sync_checked_form {position: relative!important;}
+
+
+
 /*	CSS for www.plurk.com
 	3Presto by kuniumi yen
 		Version Kai(2.0) 2014/06/13 Dev
@@ -36,7 +83,7 @@
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 7, 0.6);
 }
 
-.bottom_start, .bottom_end{/*時間*/
+.bottom_start ,.bottom_end {/*時間軸文字*/
 	color: #333 !important;
 	text-shadow: 0px 0px 2px #AAA;
 	font-weight: bold;
@@ -68,7 +115,7 @@
 	border-right: 1px solid rgba(51,51,51,.2);
 }
 
-#filter_tab a{/*分類tab*/
+#filter_tab a {/*分類tab*/
   padding: 0px 9px !important;
   font-size: 14px;
   line-height: 34px;
@@ -82,7 +129,7 @@
   -moz-transition:    all .2s ease 0s;
   -webkit-transition: all .2s ease 0s;
 }
-#filter_tab a:hover{
+#filter_tab a:hover {
 	background-color: #FFF;
 	color: #000;
 	text-decoration: none;
@@ -113,8 +160,7 @@ html, body {
   min-height: 400px;
 }
 
-#timeline_bg,
-#timeline_fg {
+#timeline_bg ,#timeline_fg {
 	height: 80% !important;
 	min-height: 400px;
 }
@@ -125,10 +171,7 @@ html, body {
 	padding-top: 2% !important;
 }
 
-.block_bg,
-.block_cnt,
-.div_inner,
-.div_one_line {
+.block_bg ,.block_cnt ,.div_inner ,.div_one_line {
 	height: 100% !important;
 }
 
