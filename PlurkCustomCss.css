@@ -14,7 +14,7 @@
 }
 .plurkaction.pane {
 	position: absolute;
-	top: 0 !important;
+	top: 42px !important;
 	left: 0 !important;
 	z-index: 999 !important;
 	overflow: hidden !important;
@@ -161,13 +161,13 @@ html, body {
 }
 
 #timeline_bg ,#timeline_fg {
-	height: 80% !important;
+	height: 100% !important;
 	min-height: 400px;
 }
 
 #timeline_cnt {
-	top: 10% !important;
-	height: 70% !important;
+	top: 0 !important;
+	height: 80% !important;
 	padding-top: 2% !important;
 }
 
@@ -194,6 +194,10 @@ html, body {
 
 /*-----/Layout-----*/
 /*-----Position-----*/
+#timeline_holder {
+    position: relative;
+}
+
 .day_bg {
 	height: 100% !important;
 	margin-top: -20px;
@@ -212,7 +216,7 @@ html, body {
 
 #filter_tab {
 	position: absolute;
-	top: 2px;
+	top: 44px;
 	right: 0;
 	margin: 0;
 }
