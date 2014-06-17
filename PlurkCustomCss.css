@@ -1,50 +1,3 @@
-.plurkaction {
-    padding: 0 25px;
-}
-.plurkaction table {
-    margin-top: 0;
-}
-
-/* 發文訊息面板 */
-#dashboard_holder {position: static!important;}
-.plurkaction.pane textarea {max-height: 380px !important;}
-.plurkaction.pane * {
-	color: white;
-	text-shadow: 1px 1px 1px black;
-}
-.plurkaction.pane {
-	position: absolute;
-	top: 42px !important;
-	left: 0 !important;
-	z-index: 999 !important;
-	overflow: hidden !important;
-	border: none !important;
-	max-height: 40px;
-	max-width: 40%;
-	min-width: 450px;
-	background: none;
-	color:black;
-	transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-}
-.plurkaction.pane:hover {
-	max-height: 600px !important;
-	max-width: 99%;
-	border-radius: 0px 0px 5px 0px;
-	-moz-border-radius: 0px 0px 5px 0px;
-	-webkit-border-radius: 0px 0px 5px 0px;
-	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-	-moz-box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-	-webkit-box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-	background-color: rgba(50,50,50,.5);
-}
-textarea #input_big, #more_options .auto_ta, #more_options select, .clipboard {border: 1px solid black;}
-#sync_checked_form {position: relative!important;}
-
-
-
 /*	CSS for www.plurk.com
 	3Presto by kuniumi yen
 		Version Kai(2.0) 2014/06/13 Dev
@@ -73,10 +26,10 @@ textarea #input_big, #more_options .auto_ta, #more_options select, .clipboard {b
 
 #bottom_line {/*時間軸背景*/
 	background: rgba(170,170,170,.6);
-	background:   linear-gradient(to bottom, rgba(238,238,238,.6) 0%,rgba(238,238,238,.4) 50%,rgba(170,170,170,.6) 100%);
-	background:      -o-linear-gradient(top, rgba(238,238,238,.6) 0%,rgba(238,238,238,.4) 50%,rgba(170,170,170,.6) 100%);
-	background:    -moz-linear-gradient(top, rgba(238,238,238,.6) 0%,rgba(238,238,238,.4) 50%,rgba(170,170,170,.6) 100%);
-	background: -webkit-linear-gradient(top, rgba(238,238,238,.6) 0%,rgba(238,238,238,.4) 50%,rgba(170,170,170,.6) 100%);
+	background:   linear-gradient(to bottom, rgba(170,170,170,.6) 0%,rgba(238,238,238,.4) 50%,rgba(238,238,238,.6) 100%);
+	background:      -o-linear-gradient(top, rgba(170,170,170,.6) 0%,rgba(238,238,238,.4) 50%,rgba(238,238,238,.6) 100%);
+	background:    -moz-linear-gradient(top, rgba(170,170,170,.6) 0%,rgba(238,238,238,.4) 50%,rgba(238,238,238,.6) 100%);
+	background: -webkit-linear-gradient(top, rgba(170,170,170,.6) 0%,rgba(238,238,238,.4) 50%,rgba(238,238,238,.6) 100%);
 	border-top: 1px solid rgba(50, 50, 7, 0.4);
 	box-shadow:         0px 0px 10px 0px rgba(50, 50, 7, 0.6);
 	-moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 7, 0.6);
@@ -155,7 +108,6 @@ html, body {
 }
 
 #timeline_holder {
-  margin-top: 42px;
   height: 80% !important;
   min-height: 400px;
 }
@@ -166,7 +118,6 @@ html, body {
 }
 
 #timeline_cnt {
-	top: 0 !important;
 	height: 80% !important;
 	padding-top: 2% !important;
 }
@@ -203,20 +154,20 @@ html, body {
 	margin-top: -20px;
 }
 
+.div_inner {
+	top: 20px;
+}
 .div_bottom {
-	bottom: 0px;
+	top: 0px;
 	position: absolute;
 }
 
 #bottom_line {
 	position: relative !important;
-	top: 100% !important;
-	margin-top: -20px;
+	top: 0 !important;
 }
 
 #filter_tab {
-	position: absolute;
-	top: 44px;
 	right: 0;
 	margin: 0;
 }
