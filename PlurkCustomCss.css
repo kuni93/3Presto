@@ -12,8 +12,8 @@
 /*-----/Custom(自訂設定區結束)-----*/
 /*-----UI-----*/
 #timeline_holder {/*河床*/
+	border-bottom: none !important;
 	border-top: none !important;
-	border-bottom: 1px solid rgba(170,170,170,.5) !important;
 	background-color: #EEE;
 	background:   linear-gradient(to bottom, #EEE 60%,#AAA 100%);
 	background:      -o-linear-gradient(top, #EEE 60%,#AAA 100%);
@@ -41,6 +41,7 @@
 	text-shadow: 0px 0px 2px #AAA;
 	font-weight: bold;
 	font-size: 14px;
+	line-height: 20px;
 }
 .bottom_end {
 	opacity: 0;
@@ -72,7 +73,7 @@
   padding: 0px 9px !important;
   font-size: 14px;
   line-height: 34px;
-  background-color: #DDD;
+  background-color: #AAA;
   color: #333;
   border: none!important;
   text-decoration: none;
@@ -81,6 +82,9 @@
   -o-transition:      all .2s ease 0s;
   -moz-transition:    all .2s ease 0s;
   -webkit-transition: all .2s ease 0s;
+	box-shadow:         0px 0px 5px 0px rgba(50, 50, 7, 0.6);
+	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 7, 0.6);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 7, 0.6);
 }
 #filter_tab a:hover {
 	background-color: #FFF;
@@ -170,6 +174,7 @@ html, body {
 #filter_tab {
 	right: 0;
 	margin: 0;
+	padding: 0px 20px;
 }
 
 /*-----/Position-----*/
