@@ -3,11 +3,20 @@
 		Version Kai(2.0) 2014/06/13 Dev
 		https://github.com/tzulum/3Presto
 	License:GNU General Public License
-	Supported browsers:Opera(Presto),Firefox,Chromium*/
-
+		*Default #dynamic_logo background-image Copyright 春沢 from http://www.pixiv.net/member_illust.php?mode=medium&illust_id=34141681
+	Supported browsers:Opera(Presto),Firefox,Chromium */
 /*R.I.P. Opera Web Browser 1996-2013 We Will Miss You.*/
 
 /*-----Custom(自訂設定區)-----*/
+/*-----頂置設定-----*/
+#dynamic_logo {/* 這裡是河道上GUMI、ゆかり、IA的所在位置，你可以更換成其他去背的圖片、或是個人作品。全河道背景需使下面#timeline_holder而不是這個 */
+	background-image: url("http://i.imgur.com/JHgl3TY.png")!important; /* 背景圖片 */
+	background-repeat: no-repeat!important; /*重複背景*/
+	background-position: right bottom!important; /*背景對齊位置*/
+}
+
+#timeline_holder {/* 這裡是河道背景，預設漸層色背景不需另外設定。若需要自行修改可以仿造上面"#dynamic_logo"的語法 */
+}
 
 /*-----/Custom(自訂設定區結束)-----*/
 /*-----UI-----*/
@@ -67,6 +76,18 @@
 	border: none;
 	border-left: 1px solid rgba(238,238,238,.2);
 	border-right: 1px solid rgba(51,51,51,.2);
+}
+
+#dynamic_logo {
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	top: -10px;
+	right: 0px;
+	left: auto;
+}
+#dynamic_logo * {
+	display :none;
 }
 
 #filter_tab a {/*分類tab*/
@@ -146,7 +167,6 @@ html, body {
   max-width: none;
 }
 
-
 /*-----/Layout-----*/
 /*-----Position-----*/
 #timeline_holder {
@@ -174,7 +194,11 @@ html, body {
 #filter_tab {
 	right: 0;
 	margin: 0;
-	padding: 0px 20px;
+	padding: 8px 20px;
+	position: absolute;
+}
+#filter_tab li:last-child a {
+	margin: 0px 0px 0px 0px !important;
 }
 
 /*-----/Position-----*/
