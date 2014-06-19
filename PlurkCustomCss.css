@@ -7,7 +7,7 @@
 	Supported browsers:Opera(Presto),Firefox,Chromium */
 /*R.I.P. Opera Web Browser 1996-2013 We Will Miss You.*/
 
-/*-----Custom(自訂設定區)-----*/
+/*----------Custom(自訂設定區)----------*/
 /*-----頂置設定-----*/
 #dynamic_logo {/* 這裡是河道上GUMI、ゆかり、IA的所在位置，你可以更換成其他去背的圖片、或是個人作品。全河道背景需使下面#timeline_holder而不是這個 */
 	background-image: url("http://i.imgur.com/JHgl3TY.png")!important; /* 背景圖片 */
@@ -18,8 +18,8 @@
 #timeline_holder {/* 這裡是河道背景，預設漸層色背景不需另外設定。若需要自行修改可以仿造上面"#dynamic_logo"的語法 */
 }
 
-/*-----/Custom(自訂設定區結束)-----*/
-/*-----UI-----*/
+/*---------/Custom(自訂設定區結束)----------*/
+/*----------UI----------*/
 #timeline_holder {/*河床*/
 	border-bottom: none !important;
 	border-top: none !important;
@@ -55,11 +55,9 @@
 .bottom_end {
 	opacity: 0;
 }
-#time_show {/*噗文時間*/
-	min-width: 200px;
-	padding: 10px;
-	margin: 0px 0px 0px -120px;
-	font-size: 2em !important;
+#time_show ,#updater ,#music_player {
+	min-width: 180px;
+	padding: 0px 10px !important;
 	text-align: center !important;
 	text-shadow: 1px 1px 3px black;
 	background-color: rgba(0,0,0,.5) !important;
@@ -67,8 +65,23 @@
 	border-radius:         5px 5px 5px 5px;
 	-moz-border-radius:    5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
+	transition:         all 0.2s ease 0s;
+	-o-transition:      all 0.2s ease 0s;
+	-moz-transition:    all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
 }
-#time_show span {color: white;}
+#time_show * ,#updater * ,#music_player * {
+	color: white !important;
+	font-size: 18px !important;
+  line-height: 34px;
+	background: none !important;
+	text-decoration: none !important;
+	text-shadow: 1px 1px 3px black;
+	padding: 0;
+}
+#time_show:hover ,#updater:hover ,#music_player:hover {
+	background-color: rgba(0,0,0,.9) !important;
+}
 
 .day_bg .div_inner {/*換日線*/
 	background: none;
@@ -90,11 +103,140 @@
 	display :none;
 }
 
+.browse_button {
+	opacity: 0.3;
+	transition:         all 0.2s ease 0s;
+	-o-transition:      all 0.2s ease 0s;
+	-moz-transition:    all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+}
+.browse_button:hover{
+	opacity: 0.9;
+}
+
+.p_img {/*噗文*/
+	position: relative !important;
+	left: 20px;
+	z-index: 850;
+	border: none !important;
+	box-shadow:         1px 1px 3px black;
+	-moz-box-shadow:    1px 1px 3px black;
+	-webkit-box-shadow: 1px 1px 3px black;
+}
+.plurk_cnt .name {
+	font-size: 14px;
+	text-shadow: 0px 0px 1px rgba(0,0,0,.3);
+}
+.block_cnt .plurk_cnt {
+	padding-left: 20px !important;
+}
+.new .plurk_cnt {
+	box-shadow:         0px 0px 5px #FF0066;
+	-moz-box-shadow:    0px 0px 5px #FF0066;
+	-webkit-box-shadow: 0px 0px 5px #FF0066;
+	opacity: 1 !important;
+}
+.plurk .plurk_cnt {/*未開啟的噗*/
+	box-shadow:         0px 0px 3px black;
+	-moz-box-shadow:    0px 0px 3px black;
+	-webkit-box-shadow: 0px 0px 3px black;
+	opacity: 0.6;
+	transition:         all 0.2s ease 0s;
+	-o-transition:      all 0.2s ease 0s;
+	-moz-transition:    all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+}
+.plurk_cnt:hover {/*滑過的噗*/
+	box-shadow:         0px 0px 5px black;
+	-moz-box-shadow:    0px 0px 5px black;
+	-webkit-box-shadow: 0px 0px 5px black;
+	opacity: 1;
+}
+.list .plurk_cnt .name {
+	position: static !important;
+}
+.list {
+	border-left:  5px solid rgba(0,0,0,.7) !important;
+	border-right: 5px solid rgba(0,0,0,.7) !important;
+	border-top:    none !important;
+	border-bottom: none !important;
+}
+.plurk_box .info_box,.plurk_box .caption {
+	border: none !important;
+}
+.plurk_box .mini_form {
+	background: rgba(0,0,0,.7) !important;
+	color: white !important;
+	border: none !important;
+}
+.plurk_box .mini_form span {
+	color: white !important;
+}
+.plurk_box .caption,.info_box {
+	color: white !important;
+	background-color: rgba(0,0,0,.7) !important;
+	font-weight: bold;
+}
+.info_box * {
+	color: white !important;
+	font-weight: bold;
+}
+.plurk_box .plurk_cnt {
+	box-shadow:         none;
+	-moz-box-shadow:    none;
+	-webkit-box-shadow: none;
+	opacity: 1;
+	border: 5px solid rgba(0,0,0,.7) !important;
+	border-bottom: none !important;
+	padding-left: 15px !important;
+}
+.list .plurk_cnt {
+	padding: 0 !important;
+	border: none !important;
+}
+.plurk {
+	box-shadow:         none;
+	-moz-box-shadow:    none;
+	-webkit-box-shadow: none;
+}
+.response_time.plurk_cnt {/*回文選項*/
+	background: rgba(0,0,0,.7)!important;
+	border: none !important;
+	transition:         all 0.2s ease 0s;
+	-o-transition:      all 0.2s ease 0s;
+	-moz-transition:    all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
+}
+.response_time .holder {
+	background: none;
+}
+.response_time .holder p,.response_time .holder a {
+	color: white !important;
+	text-shadow: 0px 0px 1px black;
+}
+.response_count {/* 回應數 */
+	border: none !important;
+	background: none !important;
+	color: white !important;
+	position: relative !important;
+	top: -5px;
+	left: -10px;
+	text-shadow: 0px 0px 5px black;
+	font-size: 2em;
+}
+.new .response_count {
+	text-shadow: 0px 0px 5px red;
+}
+.bday {/*小蛋糕*/
+	top: -10px !important;
+	left: 10px !important;
+}
+
 #filter_tab a {/*分類tab*/
   padding: 0px 9px !important;
   font-size: 14px;
   line-height: 34px;
-  background-color: #AAA;
+  background-color: #BBB;
   color: #333;
   border: none!important;
   text-decoration: none;
@@ -123,7 +265,7 @@
 	-webkit-box-shadow: inset 0px 0px 3px #000;
 }
 
-/*-----/UI-----*/
+/*----/UI-----*/
 /*-----Layout-----*/
 html, body {
 	width: 100%;
@@ -167,8 +309,8 @@ html, body {
   max-width: none;
 }
 
-/*-----/Layout-----*/
-/*-----Position-----*/
+/*---------/Layout----------*/
+/*----------Position----------*/
 #timeline_holder {
     position: relative;
 }
@@ -191,6 +333,21 @@ html, body {
 	top: 0 !important;
 }
 
+#time_show ,#updater ,#music_player {
+	top: 80% !important;
+	margin-top: -38px;
+	position: absolute;
+}
+#time_show {
+	left: 50% !important;
+	margin-left: -90px;
+}
+
+.browse_button {
+	top: 50%;
+	display : block !important;
+}
+
 #filter_tab {
 	right: 0;
 	margin: 0;
@@ -201,4 +358,6 @@ html, body {
 	margin: 0px 0px 0px 0px !important;
 }
 
-/*-----/Position-----*/
+/*---------/Position----------*/
+/*----------Image----------*/
+/*---------/Image----------*/
