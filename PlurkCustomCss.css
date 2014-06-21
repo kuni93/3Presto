@@ -276,19 +276,16 @@
 .html5 #dashboard_holder #plurk_responses #reply .responses ,.html5 #reply #reply_box ,.html5 #shareUser {/* For Perma2 */
 	background: none;
 	border: none;
-	color: white;
+	color: #FFF;
 }
 .plurkaction ,#toggle_tab li.tt_selected, #plurk-dashboard{/* Original Theme */
 	background: none;
 	color: #FFF;
 	border: none;
 }
-.saved_searches a {
-	color: #ccc !important;
-}
-#plurk-dashboard a, #plurk-dashboard .dash-segment #dash-additional-info #about_me a {
+#plurk-dashboard .dash-segment #dash-additional-info #about_me a ,.dash-segment #tw_help a ,.dash-segment #fan_holder span a {
 	color: #333;
-	background-color: rgba(238,238,238,.6);
+	background-color: rgba(238,238,238,.9);
 	text-decoration: none;
 	padding: 0px 2px;
 	border: 1px solid transparent;
@@ -300,17 +297,49 @@
   -moz-transition:    all .2s ease 0s;
   -webkit-transition: all .2s ease 0s;
 }
-#plurk-dashboard a:hover, #plurk-dashboard .dash-segment #dash-additional-info #about_me a:hover {
+#plurk-dashboard .dash-segment #dash-additional-info #about_me a:hover ,.dash-segment #tw_help a:hover ,.dash-segment #fan_holder span a:hover {
 	color: #EEE;
 	text-decoration: underline;
+	text-decoration-color:         #AAA;
+	-moz-text-decoration-color:    #AAA;
+	-webkit-text-decoration-color: #AAA;
 	background: none;
 }
+.friend_man ,.show_all_friends a ,.show_mutual_friends a {
+	font-size: 14px !important;
+	line-height: 24px;
+	width: 100%;
+	display : inline-block;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 0px;
+	text-align: center;
+	text-decoration: none !important;
+	transition:         all .2s ease 0s;
+  -o-transition:      all .2s ease 0s;
+  -moz-transition:    all .2s ease 0s;
+  -webkit-transition: all .2s ease 0s;
+}
+.show_all_friends a ,.show_mutual_friends a {
+	color: #F3A035 !important;
+	border-color: #F3A035;
+}
+.show_all_friends a:hover ,.show_mutual_friends a:hover {
+	color: #AAA !important;
+	border-color: #AAA;
+}
 .html5 #plurker_info h2 ,#plurk-dashboard h2 {
-	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #FFF !important;
 	background: none;
-	color: #efca9b;
-	font-weight: bold;
- 	padding: 0;
+	border: 1px solid #EEE;
+	border-radius: 5px;
+	padding: 0px;
+	text-transform: uppercase;
+	text-align: center;
 }
 #plurk-dashboard .dash-segment #dash-stats table td {
 	display : inline;
@@ -349,6 +378,9 @@
 }
 .dash-segment{
 	background-color: rgba(0,0,0,.6);
+}
+#fan_managment ,#friend_managment {
+    margin: 10px 0px !important;
 }
 /*----/Dashboard-----*/
 /*-----Layout-----*/
