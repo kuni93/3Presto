@@ -386,6 +386,7 @@ input, textarea {
 	left: -245px;
 	width: 275px;
 	overflow: visible;
+	z-index: 600;
 }
 .dash-segment {
 	position: relative !important;
