@@ -8,7 +8,6 @@
 /*R.I.P. Opera Web Browser 1996-2013 We Will Miss You.*/
 
 /*----------Custom(自訂設定區)----------*/
-/*-----頂置設定-----*/
 #dynamic_logo {/* 這裡是河道上GUMI、ゆかり、IA的所在位置，你可以更換成其他去背的圖片、或是個人作品。全河道背景需使下面#timeline_holder而不是這個 */
 	background-image: url("http://i.imgur.com/JHgl3TY.png")!important; /* 背景圖片 */
 	background-repeat: no-repeat!important; /*重複背景*/
