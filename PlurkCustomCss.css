@@ -470,10 +470,9 @@ input, textarea {
 	-webkit-box-shadow: 0px 0px 5px #333;
 }
 
-#more_options_holder {
-	top: 80%;
+#more_options_holder ,#sync_checked_form {
+	top: 80% !important;
 	position: fixed;
-	margin-top: -145px;
 	z-index: 10000;
 	background-color: rgba(0,0,0,.6) !important;
 	box-shadow:         0px 0px 5px #333;
@@ -483,6 +482,19 @@ input, textarea {
 	border-radius:         5px;
 	-moz-border-radius:    5px;
 	-webkit-border-radius: 5px;
+}
+#more_options_holder {
+	margin-top: -145px;
+}
+#sync_checked_form {
+	margin-top: -110px;
+	margin-left: 100px;
+}
+#sync_checked_form * {
+	color: #FFF;
+}
+.upper_arrow {
+	background: none;
 }
 /*----/Dashboard-----*/
 /*-----Layout-----*/
