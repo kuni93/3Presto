@@ -1,4 +1,4 @@
-3Presto
+3Presto 改(2.0)
 =======
 Custom Css for Plurk.com | *Open source with GPL*
 
