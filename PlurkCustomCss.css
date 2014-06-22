@@ -280,7 +280,7 @@
 }
 .plurkaction ,#toggle_tab li.tt_selected, #plurk-dashboard{/* Original Theme */
 	background: none;
-	color: #FFF;
+	color: #FFF !important;
 	border: none;
 }
 #plurk-dashboard .dash-segment #dash-additional-info #about_me a ,.dash-segment #tw_help a ,.dash-segment #fan_holder span a {
@@ -312,7 +312,7 @@
 	display : inline-block;
 	border-width: 1px;
 	border-style: solid;
-	border-radius: 5px;
+	border-radius: 3px;
 	padding: 0px;
 	text-align: center;
 	text-decoration: none !important;
@@ -323,19 +323,20 @@
 }
 .show_all_friends a ,.show_mutual_friends a {
 	color: #F3A035 !important;
-	border-color: #F3A035;
+	border-color: #F3A035 !important;
 }
 .show_all_friends a:hover ,.show_mutual_friends a:hover {
 	color: #AAA !important;
-	border-color: #AAA;
+	border-color: #AAA !important;
 }
 .html5 #plurker_info h2 ,#plurk-dashboard h2 {
+	font-family: serif;
 	font-size: 20px;
-	font-weight: normal;
+	font-weight: bold;
 	line-height: 24px;
 	color: #FFF !important;
 	background: none;
-	border: 1px solid #EEE;
+	border: 2px solid #EEE;
 	border-radius: 5px;
 	padding: 0px;
 	text-transform: uppercase;
@@ -349,30 +350,6 @@
 	background: none;
 	color: #eee;
 }
-#more_options_link {
-	background: #dfdfdf url(/static/timeline/private-lock.png) no-repeat 4px 2px;
-	color: #111 !important;
-	border: 1px solid #000;
-	border-top-color: #eee;
-	border-left-color: #eee;
-}
-#more_options .on {
-  border: 1px solid #000;
-  border-bottom-color: #eee;
-  border-right-color: #eee;
-}
-#reply #reply_box, #reply h2{
-	background: #faf3e1;
-}
-#reply{
-	color: #666 !important;
-}
-#dashboard_holder #plurk_responses #reply .responses li article .message {
-	max-width: 537px;
-}
-#reply .char_updater {
-	color: #666;
-}
 #more_options td {
 	background: none;
 }
@@ -380,7 +357,29 @@
 	background-color: rgba(0,0,0,.6);
 }
 #fan_managment ,#friend_managment {
-    margin: 10px 0px !important;
+	margin: 10px 0px !important;
+}
+#plurk-dashboard .dash-segment #dash-friends-pics .user_link, #plurk-dashboard .dash-segment #dash-fans-pics .user_link {
+	border: none;
+}
+.friend_holder img {
+ 	width: 45px;
+	height: 45px;
+}
+.friend_holder td {
+	padding: 15px 20px 5px 0px;
+}
+.dash-segment .user_link img {
+	border-radius: 3px;
+	transition:         all .2s ease 0s;
+  -o-transition:      all .2s ease 0s;
+  -moz-transition:    all .2s ease 0s;
+  -webkit-transition: all .2s ease 0s;
+}
+.dash-segment .user_link img:hover {
+	box-shadow:         0px 0px 10px #AAA;
+	-moz-box-shadow:    0px 0px 10px #AAA;
+	-webkit-box-shadow: 0px 0px 10px #AAA;
 }
 /*----/Dashboard-----*/
 /*-----Layout-----*/
