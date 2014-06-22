@@ -388,6 +388,9 @@ input, textarea {
 	overflow: visible;
 	z-index: 600;
 }
+#plurk-dashboard:hover {
+	z-index: 6000;
+}
 .dash-segment {
 	position: relative !important;
 	width: 275px !important;
