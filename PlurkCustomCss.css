@@ -358,7 +358,7 @@ input, textarea {
 	margin: 10px 0px !important;
 }
 #dash-friends-pics .user_link ,#dash-fans-pics .user_link {
-	border: none;
+	border: none !important;
 }
 .friend_holder img {
  	width: 45px;
