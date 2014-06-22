@@ -1,8 +1,8 @@
 /*	CSS for www.plurk.com
 	3Presto by kuniumi yen
-		Version Kai(2.0) 2014/06/13 Dev
+		Version Kai(2.0-Bate) 2014/06/22
 		https://github.com/tzulum/3Presto
-	License:GNU General Public License
+	License:GNU General Public License *only for code.
 		*Default #dynamic_logo background-image Copyright 春沢 from http://www.pixiv.net/member_illust.php?mode=medium&illust_id=34141681
 	Supported browsers:Opera(Presto),Firefox,Chromium */
 /*R.I.P. Opera Web Browser 1996-2013 We Will Miss You.*/
@@ -19,6 +19,7 @@
 }
 
 /*---------/Custom(自訂設定區結束)----------*/
+
 /*----------UI----------*/
 #timeline_holder {/*河床*/
 	border-bottom: none !important;
@@ -71,7 +72,7 @@
 	-webkit-transition: all 0.2s ease 0s;
 }
 #time_show * ,#updater * ,#music_player * {
-	color: white !important;
+	color: #FFF !important;
 	font-size: 18px !important;
   line-height: 34px;
 	background: none !important;
@@ -91,11 +92,8 @@
 	border-right: 1px solid rgba(51,51,51,.2);
 }
 
-#dynamic_logo {
-	background-size: contain;
-}
 #dynamic_logo * {
-	display :none;
+	display : none;
 }
 
 .cmp_arrow_left ,.cmp_arrow_right ,.cmp_back_to_today {
@@ -169,19 +167,19 @@
 }
 .plurk_box .mini_form {
 	background: rgba(51,51,51,.9) !important;
-	color: white !important;
+	color: #FFF !important;
 	border: none !important;
 }
 .plurk_box .mini_form span {
-	color: white !important;
+	color: #FFF !important;
 }
 .plurk_box .caption,.info_box {
-	color: white !important;
+	color: #FFF !important;
 	background-color: rgba(51,51,51,.9) !important;
 	font-weight: bold;
 }
 .info_box * {
-	color: white !important;
+	color: #FFF !important;
 	font-weight: bold;
 }
 .plurk_box .plurk_cnt {
@@ -214,13 +212,13 @@
 	background: none;
 }
 .response_time .holder p,.response_time .holder a {
-	color: white !important;
+	color: #FFF !important;
 	text-shadow: 0px 0px 1px black;
 }
 .response_count {/* 回應數 */
 	border: none !important;
 	background: none !important;
-	color: white !important;
+	color: #FFF !important;
 	position: relative !important;
 	top: -5px;
 	left: -10px;
@@ -228,7 +226,7 @@
 	font-size: 2em;
 }
 .new .response_count {
-	text-shadow: 0px 0px 5px red;
+	text-shadow: 0px 0px 5px #F00;
 }
 .plurk_icon {
 	z-index: 860;
@@ -244,7 +242,7 @@
   line-height: 34px;
   background-color: #BBB;
   color: #333;
-  border: none!important;
+  border: none !important;
   text-decoration: none;
   border-radius: 3px 3px;
   transition:         all .2s ease 0s;
@@ -275,8 +273,9 @@ input, textarea {
 	box-shadow: 0px 0px 5px #333;
 }
 /*----/UI-----*/
+
 /*-----Dashboard-----*/
-.html5 #dashboard_holder #plurk_responses #reply .responses ,.html5 #reply #reply_box ,.html5 #shareUser {/* For Perma2 */
+#dashboard_holder #plurk_responses #reply .responses ,#reply #reply_box ,#shareUser {/* For Perma2 */
 	background: none;
 	border: none;
 	color: #FFF;
@@ -286,10 +285,10 @@ input, textarea {
 	color: #FFF !important;
 	border: none;
 }
-#plurk-dashboard .dash-segment #dash-additional-info #about_me a ,.dash-segment #tw_help a ,.dash-segment #fan_holder span a {
-	color: #333;
+#dash-additional-info #about_me a ,.dash-segment #tw_help a ,.dash-segment #fan_holder span a {
+	color: #333 !important;
 	background-color: rgba(238,238,238,.9);
-	text-decoration: none;
+	text-decoration: none !important;
 	padding: 0px 2px;
 	border: 1px solid transparent;
 	border-radius: 2px;
@@ -300,9 +299,9 @@ input, textarea {
   -moz-transition:    all .2s ease 0s;
   -webkit-transition: all .2s ease 0s;
 }
-#plurk-dashboard .dash-segment #dash-additional-info #about_me a:hover ,.dash-segment #tw_help a:hover ,.dash-segment #fan_holder span a:hover {
-	color: #EEE;
-	text-decoration: underline;
+#dash-additional-info #about_me a:hover ,.dash-segment #tw_help a:hover ,.dash-segment #fan_holder span a:hover {
+	color: #EEE !important;
+	text-decoration: underline !important;
 	text-decoration-color:         #AAA;
 	-moz-text-decoration-color:    #AAA;
 	-webkit-text-decoration-color: #AAA;
@@ -332,7 +331,7 @@ input, textarea {
 	color: #AAA !important;
 	border-color: #AAA !important;
 }
-.html5 #plurker_info h2 ,#plurk-dashboard h2 {
+#plurker_info h2 ,#plurk-dashboard h2 {
 	font-family: serif;
 	font-size: 20px;
 	font-weight: bold;
@@ -359,7 +358,7 @@ input, textarea {
 #fan_managment ,#friend_managment {
 	margin: 10px 0px !important;
 }
-#plurk-dashboard .dash-segment #dash-friends-pics .user_link, #plurk-dashboard .dash-segment #dash-fans-pics .user_link {
+#dash-friends-pics .user_link ,#dash-fans-pics .user_link {
 	border: none;
 }
 .friend_holder img {
@@ -418,9 +417,9 @@ input, textarea {
 	-webkit-border-radius: 5px;
 }
 #full_name {
-	font-size: 2em!important;
-	text-shadow:0px 0px 5px black;
-	line-height: 1em!important;
+	font-size: 2em !important;
+	text-shadow: 0px 0px 5px black;
+	line-height: 1em !important;
 }
 .profile-pic {
 	height: 100px;
@@ -451,10 +450,10 @@ input, textarea {
 	max-width: 40%;
 	min-width: 600px;
 	background: none;
-	color:black;
-	transition: all 0.2s ease 0s;
-	-o-transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
+	color: #000;
+	transition:         all 0.2s ease 0s;
+	-o-transition:      all 0.2s ease 0s;
+	-moz-transition:    all 0.2s ease 0s;
 	-webkit-transition: all 0.2s ease 0s;
 	border-radius:         5px;
 	-moz-border-radius:    5px;
@@ -497,6 +496,7 @@ input, textarea {
 	background: none;
 }
 /*----/Dashboard-----*/
+
 /*-----Layout-----*/
 html, body {
 	width: 100%;
@@ -560,9 +560,10 @@ html, body {
 	display : none !important;
 }
 /*---------/Layout----------*/
+
 /*----------Position----------*/
 #timeline_holder {
-    position: relative;
+	position: relative;
 }
 
 .day_bg {
@@ -614,7 +615,7 @@ html, body {
 	z-index: 1;
 }
 #filter_tab li:last-child a {
-	margin: 0px 0px 0px 0px !important;
+	margin: 0 !important;
 }
 
 #dashboard_holder {
@@ -622,6 +623,7 @@ html, body {
 }
 
 /*---------/Position----------*/
+
 /*----------Image----------*/
 .cmp_arrow_left {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAcpJREFUWIXF109vDVEYx/FPuxBFNXgFrVsNFsorEEuxrvBOvIImmr4AQvoSrIgFC7smElFiS0gkty0J4la0krE4M8k46vacmbnuL3k2M/Oc7+/8nedMSNdxXMMVXMAcpst33/AOG3iKh+WzTrSANfxAkRg7uI/5NuAjWMWvDHAce1jBVC78DN60AMfxCr1U+CVsdwivYguLKT0fBbxu4p8jcVS3wz5sOvZdE6v/AV7F7Ri+oPlq38TjzJw90VSstYCfxyE8yMy9V8Fn5B0ydfi5WidO4EtG/kB5kt7sAH4Mzxq0c105FDlJ/Y7gBe7A8zHBC6zD5wz42Q7hhXAw2R0TvMDPSWnaLKPSKcwm5h6oT4luX+BkLW8OHxJzh05BziLs2sT6pFBGpeointRMvMXl0kQTbcCNBs7jkZjF+wbtLBGKzZ0xmBgIuwmhgGwyh7GJlYzcu7U888Ivso2JWxk5uzgtUo77OD5mfr8cwwll+OsWJlLjJQ7vZ4BQpWyNEN4Xzo6hWhyRib5wpUtST6heuxz2A3sea0qoXpvujmq1Lxsy5ynqCVXTIAM8EPb5X1st1kSGkWlc9ef1fKZ891X4L1TX80f4ntLob4sJtQNBwK4VAAAAAElFTkSuQmCC') no-repeat scroll 0px 0px transparent !important;
