@@ -1,6 +1,6 @@
 /*CSS for www.plurk.com
   3Presto by Kunigumi Yen ( www.plurk.com/tzulum )
-  Version 3.20160210.1
+  Version 3.20160222.1
   Recommend the latest version Firefox browser.
   R.I.P. Opera Web Browser 1996-2013 We Will Miss You.
   License:GNU General Public License.
@@ -233,9 +233,9 @@
   width: 98%;
   height: 0;
   margin-top: -.8vw;
-  margin-left: auto;
+  margin-left: 1vw;
   margin-bottom: .8vw;
-  margin-right: auto;
+  margin-right: 1vw;
 }
 
 #timeline_control_holder {
@@ -350,7 +350,7 @@
 /*----------Dashbroad----------*/
 #dashboard_holder{
   max-width: none;
-  margin: 2vw auto 0px;
+  margin: 1vw auto 0px;
   padding: 0;
 }
 
